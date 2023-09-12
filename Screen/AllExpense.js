@@ -1,9 +1,9 @@
 import React from 'react'
-import { View } from 'react-native'
+import { Text, View } from 'react-native'
 
 function AllExpense() {
   return (
-    <View>AllExpense</View>
+    <Text>AllExpense</Text>
   )
 }
 
