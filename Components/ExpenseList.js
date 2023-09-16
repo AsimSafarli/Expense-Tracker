@@ -1,9 +1,10 @@
 import React from 'react'
 import { FlatList, Text } from 'react-native'
+import ExpenseItem from './Expenseİtem';
 
 function ExpenseList({expenses}) {
     function renderExpenseItem(itemData){
-        return <Text>{itemData.item.description}</Text>;
+        return <ExpenseItem {...itemData.item}/>;
     }
   return <FlatList data={expenses} renderItem={renderExpenseItem}  keyExtractor={(item) => item.id}/>;
 }
